@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("img19.jpg");
+background-size: cover;
+
+
+}
+
+#board{
+    width: 540px;
+    height: 540px;
+   /*background-color: yellow;*/
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+
+    background: url("grass.avif");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 20px;
+
+}
+#board div{
+    width:180px;
+    height:180px;
+    background-image:url("h.png");
+    background-size: auto;
+   
+}
+#board div img{
+    width: 120px;
+    height:120px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+}
+
+
+
+.cursor{
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('./hammer1.png');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+}
+.cursor.active{
+    transform: translate(-20%, -20%) rotate(-45deg);
+}
